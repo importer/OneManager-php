@@ -9,99 +9,99 @@
 <!DOCTYPE html>
 <html lang="<!--constStr@language-->">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
-	<title><!--Title--></title>
-	<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.1/css/mdui.css">
-	<script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.1/js/mdui.min.js"></script>
-	<script src="//cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>	
-	<script src="//cdn.staticfile.org/layer/2.3/layer.js"></script>
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-	<link rel="icon" href="<!--base_path-->favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <title><!--Title--></title>
+    <link rel="stylesheet" href="//cdn.bootcdn.net/ajax/libs/mdui/0.4.1/css/mdui.css">
+    <script src="//cdn.bootcdn.net/ajax/libs/mdui/0.4.1/js/mdui.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>   
+    <script src="//cdn.staticfile.org/layer/2.3/layer.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <link rel="icon" href="<!--base_path-->favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="<!--base_path-->favicon.ico" type="image/x-icon">
 
-	 <style>
-		body{<!--BackgroundStart-->background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-image:url("<!--BackgroundUrl-->");<!--BackgroundEnd-->}
-		.mdui-appbar .mdui-toolbar{
-			height:64px;
-			font-size: 15px;
-		}
-		.mdui-toolbar>*{
-			padding: 0 6px;
-			margin: 0 2px;
-			opacity:0.5;
-		}
-		.mdui-toolbar>.mdui-typo-headline{
-			padding: 0 1px 0 0;
-		}
-		.mdui-toolbar>i{
-			padding: 0;
-		}
-		.mdui-toolbar>a:hover,a.mdui-typo-headline,a.active{
-			opacity:1;
-		}
-		.mdui-container{
-			max-width:950px;
-		}
-		.mdui-list-item{
-			-webkit-transition:none;
-			transition:none;
-		}
-		.mdui-list>.th{
-			background-color:initial;
-		}
-		.mdui-list-item>a{
-			width:100%;
-			line-height: 48px
-		}
-		.mdui-list-item{
-			margin: 2px 0px;
-			padding:0;
-		}
-		.mdui-toolbar>a:last-child{
-			opacity:1;
-		}
-		#instantclick-bar {
-        		background: white;
-        	}
-		.mdui-video-fluid {
+     <style>
+        body{<!--BackgroundStart-->background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-image:url("<!--BackgroundUrl-->");<!--BackgroundEnd-->}
+        .mdui-appbar .mdui-toolbar{
+            height:64px;
+            font-size: 15px;
+        }
+        .mdui-toolbar>*{
+            padding: 0 6px;
+            margin: 0 2px;
+            opacity:0.5;
+        }
+        .mdui-toolbar>.mdui-typo-headline{
+            padding: 0 1px 0 0;
+        }
+        .mdui-toolbar>i{
+            padding: 0;
+        }
+        .mdui-toolbar>a:hover,a.mdui-typo-headline,a.active{
+            opacity:1;
+        }
+        .mdui-container{
+            max-width:950px;
+        }
+        .mdui-list-item{
+            -webkit-transition:none;
+            transition:none;
+        }
+        .mdui-list>.th{
+            background-color:initial;
+        }
+        .mdui-list-item>a{
+            width:100%;
+            line-height: 48px
+        }
+        .mdui-list-item{
+            margin: 2px 0px;
+            padding:0;
+        }
+        .mdui-toolbar>a:last-child{
+            opacity:1;
+        }
+        #instantclick-bar {
+                background: white;
+            }
+        .mdui-video-fluid {
             height: -webkit-fill-available;
-		}
-		.dplayer-video-wrap .dplayer-video {
-			height: -webkit-fill-available !important;
-		}
-		.gslide iframe, .gslide video {
+        }
+        .dplayer-video-wrap .dplayer-video {
+            height: -webkit-fill-available !important;
+        }
+        .gslide iframe, .gslide video {
             height: -webkit-fill-available;
-		}
-		@media screen and (max-width:950px)	{		
-			.mdui-list-item .mdui-text-right{
-				display: none;
-			}
-			.mdui-container{
-				width:100% !important;
-				margin:0px;
-			}
-			.mdui-toolbar>*{				
-				display: none;
-			}
-			.mdui-toolbar>a:last-child,.mdui-toolbar>a:nth-last-of-type(2),.mdui-toolbar>.mdui-typo-headline,.mdui-toolbar>i:first-child,.mdui-toolbar-spacer{
-				display: block;
-			}
-		}
-		.spec-col{padding:.9em;display:flex;align-items:center;white-space:nowrap;flex:1 50%;min-width:225px}
-		.spec-type{font-size:1.35em}
-		.spec-value{font-size:1.25em}
-		.spec-text{float:left}
-		.device-section{padding-top:30px}
-		.spec-device-img{height:auto;height:340px;padding-bottom:30px}
-		#dl-header{margin:0}
-		#dl-section{padding-top:10px}
-		#dl-latest{position:relative;top:50%;transform:translateY(-50%)}
-	</style>
+        }
+        @media screen and (max-width:950px) {       
+            .mdui-list-item .mdui-text-right{
+                display: none;
+            }
+            .mdui-container{
+                width:100% !important;
+                margin:0px;
+            }
+            .mdui-toolbar>*{                
+                display: none;
+            }
+            .mdui-toolbar>a:last-child,.mdui-toolbar>a:nth-last-of-type(2),.mdui-toolbar>.mdui-typo-headline,.mdui-toolbar>i:first-child,.mdui-toolbar-spacer{
+                display: block;
+            }
+        }
+        .spec-col{padding:.9em;display:flex;align-items:center;white-space:nowrap;flex:1 50%;min-width:225px}
+        .spec-type{font-size:1.35em}
+        .spec-value{font-size:1.25em}
+        .spec-text{float:left}
+        .device-section{padding-top:30px}
+        .spec-device-img{height:auto;height:340px;padding-bottom:30px}
+        #dl-header{margin:0}
+        #dl-section{padding-top:10px}
+        #dl-latest{position:relative;top:50%;transform:translateY(-50%)}
+    </style>
 </head>
 <body class=" mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink">
-	<header class="mdui-appbar mdui-appbar-fixed mdui-color-theme mdui-appbar-inset">	
+    <header class="mdui-appbar mdui-appbar-fixed mdui-color-theme mdui-appbar-inset">   
         <div class="mdui-toolbar mdui-color-theme">
             <span class="mdui-btn  mdui-typo-headline mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}" mdui-tooltip="{content: '菜单'}"><i class="mdui-icon material-icons">menu</i></span>
             <a href="<!--base_path-->" class="mdui-typo-headline"><!--Sitename--></a>
@@ -114,28 +114,28 @@
             <a href="javascript:thumb();" id="thumb" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '切换显示'}"><i class="mdui-icon material-icons">format_list_bulleted</i></a>
 <!--ShowThumbnailsEnd-->
         </div>
-	</header>
+    </header>
 
 <div class="mdui-drawer mdui-drawer-close mdui-color-indigo-50" id="main-drawer">
-	<div class="mdui-grid-tile">
-		<!--<a><img src="//image.suning.cn/uimg/ZR/share_order/158562104413864293.jpg"/></a>-->
-		<div class="mdui-grid-tile-actions mdui-grid-tile-actions-gradient">
-			<div class="mdui-grid-tile-text">
-				<div class="mdui-grid-tile-title"><!--Title--></div>
-				<div class="mdui-grid-tile-subtitle">OneManager</div>
+    <div class="mdui-grid-tile">
+        <!--<a><img src="//image.suning.cn/uimg/ZR/share_order/158562104413864293.jpg"/></a>-->
+        <div class="mdui-grid-tile-actions mdui-grid-tile-actions-gradient">
+            <div class="mdui-grid-tile-text">
+                <div class="mdui-grid-tile-title"><!--Title--></div>
+                <div class="mdui-grid-tile-subtitle">OneManager</div>
             </div>
-   		 </div>
-	</div>   
-	<div class="mdui-list" mdui-collapse="{accordion: true}">
-		<a href="<!--base_path-->" class="mdui-list-item mdui-ripple">
-			<i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-			<div class="mdui-list-item-content"><!--constStr@Home--></div>
+         </div>
+    </div>   
+    <div class="mdui-list" mdui-collapse="{accordion: true}">
+        <a href="<!--base_path-->" class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+            <div class="mdui-list-item-content"><!--constStr@Home--></div>
         </a>
 <!--MultiDiskAreaStart-->
 <!--MultiDisksStart-->
         <a href="<!--MultiDisksUrl-->" class="mdui-list-item mdui-ripple" <!--MultiDisksNow-->>
-			<i class="mdui-list-item-icon mdui-icon material-icons">cloud</i>
-			<div class="mdui-list-item-content"><!--MultiDisksName--></div>
+            <i class="mdui-list-item-icon mdui-icon material-icons">cloud</i>
+            <div class="mdui-list-item-content"><!--MultiDisksName--></div>
         </a>
 <!--MultiDisksEnd-->
 <!--MultiDiskAreaEnd-->
@@ -143,7 +143,7 @@
             <i class="mdui-list-item-icon mdui-icon material-icons">code</i>
             <div class="mdui-list-item-content">Github</div>
         </a>
-	</div>
+    </div>
 </div>
 
 <!--ListStart-->
@@ -231,7 +231,7 @@
 
 <!--IsFolderStart-->
 <div class="mdui-container">
-	<div class="mdui-container-fluid"></div>
+    <div class="mdui-container-fluid"></div>
     <div class="mdui-container-fluid">
 <!--HeadomfStart-->
 <div class="mdui-typo mdui-shadow-3" style="padding: 20px;margin: 20px 0">
@@ -290,72 +290,72 @@
                             <div class="mdui-col-sm-2 mdui-text-right"><!--constStr@Size--> <i class="mdui-icon material-icons icon-sort" data-sort="size" data-order="downward">expand_more</i></div>
                         </li>
 <!--BackArrowStart-->
-		<li class="mdui-list-item mdui-ripple">
-			<a href="<!--BackArrowUrl-->">
-			  <div class="mdui-col-xs-12 mdui-col-sm-7">
-				<i class="mdui-icon material-icons">arrow_upward</i>
-		    	..
-			  </div>
-			  <div class="mdui-col-sm-3 mdui-text-right"></div>
-			  <div class="mdui-col-sm-2 mdui-text-right"></div>
-		  	</a>
-		</li>
+        <li class="mdui-list-item mdui-ripple">
+            <a href="<!--BackArrowUrl-->">
+              <div class="mdui-col-xs-12 mdui-col-sm-7">
+                <i class="mdui-icon material-icons">arrow_upward</i>
+                ..
+              </div>
+              <div class="mdui-col-sm-3 mdui-text-right"></div>
+              <div class="mdui-col-sm-2 mdui-text-right"></div>
+            </a>
+        </li>
 <!--BackArrowEnd-->
-		
+        
 <!--FolderListStart-->
-		<li class="mdui-list-item mdui-ripple" data-sort data-sort-name="<!--FileEncodeReplaceName-->" data-sort-date="<!--lastModifiedDateTime-->" data-sort-size="<!--size-->" style="padding-right:36px;">
-			<a href="<!--FileEncodeReplaceUrl-->/">
-			  <div class="mdui-col-xs-12 mdui-col-sm-7 mdui-text-truncate">
-				<i class="mdui-icon material-icons">folder_open</i>
-		    	<span><!--FileEncodeReplaceName--></span>
-			  </div>
-			  <div class="mdui-col-sm-3 mdui-text-right"><!--lastModifiedDateTime--></div>
-			  <div class="mdui-col-sm-2 mdui-text-right"><!--size--></div>
-		  	</a>
-		</li>
+        <li class="mdui-list-item mdui-ripple" data-sort data-sort-name="<!--FileEncodeReplaceName-->" data-sort-date="<!--lastModifiedDateTime-->" data-sort-size="<!--size-->" style="padding-right:36px;">
+            <a href="<!--FileEncodeReplaceUrl-->/">
+              <div class="mdui-col-xs-12 mdui-col-sm-7 mdui-text-truncate">
+                <i class="mdui-icon material-icons">folder_open</i>
+                <span><!--FileEncodeReplaceName--></span>
+              </div>
+              <div class="mdui-col-sm-3 mdui-text-right"><!--lastModifiedDateTime--></div>
+              <div class="mdui-col-sm-2 mdui-text-right"><!--size--></div>
+            </a>
+        </li>
 <!--FolderListEnd-->
 <!--FileListStart-->
-		<li class="mdui-list-item file mdui-ripple" data-sort data-sort-name="<!--FileEncodeReplaceName-->" data-sort-date="<!--lastModifiedDateTime-->" data-sort-size="<!--size-->" data-readypreview="<!--FileExt-->">
-			<a class="<!--FileExtType-->" data-name="<!--FileEncodeReplaceName-->" href="<!--FileEncodeReplaceUrl-->?preview" target="_blank">
+        <li class="mdui-list-item file mdui-ripple" data-sort data-sort-name="<!--FileEncodeReplaceName-->" data-sort-date="<!--lastModifiedDateTime-->" data-sort-size="<!--size-->" data-readypreview="<!--FileExt-->">
+            <a class="<!--FileExtType-->" data-name="<!--FileEncodeReplaceName-->" href="<!--FileEncodeReplaceUrl-->?preview" target="_blank">
               <!--<?php if(isImage($item['name']) and $_COOKIE["image_mode"] == "1"):?>
-			  <img class="mdui-img-fluid" src="<?php echo get_absolute_path($root.$path).rawurlencode($item['name']); ?>">
+              <img class="mdui-img-fluid" src="<?php echo get_absolute_path($root.$path).rawurlencode($item['name']); ?>">
               <?php else:?>-->
               <div class="mdui-col-xs-12 mdui-col-sm-7 mdui-text-truncate">
-				<i class="mdui-icon material-icons"><!--IconValue--></i>
-		    	<span><!--FileEncodeReplaceName--></span>
-			  </div>
-			  <div class="mdui-col-sm-3 mdui-text-right"><!--lastModifiedDateTime--></div>
-			  <div class="mdui-col-sm-2 mdui-text-right"><!--size--></div>
-		  	</a>
+                <i class="mdui-icon material-icons"><!--IconValue--></i>
+                <span><!--FileEncodeReplaceName--></span>
+              </div>
+              <div class="mdui-col-sm-3 mdui-text-right"><!--lastModifiedDateTime--></div>
+              <div class="mdui-col-sm-2 mdui-text-right"><!--size--></div>
+            </a>
 
-			<div class="forcedownload "  >
- 			      <a title="<!--constStr@Download-->" href="<!--FileEncodeReplaceUrl-->">
-			          <button class="mdui-btn mdui-ripple mdui-btn-icon"><i class="mdui-icon material-icons">file_download</i></button>
-			      </a>
-			</div>
+            <div class="forcedownload "  >
+                  <a title="<!--constStr@Download-->" href="<!--FileEncodeReplaceUrl-->">
+                      <button class="mdui-btn mdui-ripple mdui-btn-icon"><i class="mdui-icon material-icons">file_download</i></button>
+                  </a>
+            </div>
         </li>
 <!--FileListEnd-->
 
 <!--MorePageStart-->
 <form action="" method="POST" id="nextpageform">
     <input type="hidden" id="pagenum" name="pagenum" value="">
-		  <li class="mdui-list-item th">
-		    <div class="mdui-col-sm-6 mdui-left mdui-text-left">
+          <li class="mdui-list-item th">
+            <div class="mdui-col-sm-6 mdui-left mdui-text-left">
 <!--PrePageStart-->
-		        <a onclick="nextpage(<!--PrePageNum-->);" class="mdui-btn mdui-btn-raised"><!--constStr@PrePage--></a>
+                <a onclick="nextpage(<!--PrePageNum-->);" class="mdui-btn mdui-btn-raised"><!--constStr@PrePage--></a>
 <!--PrePageEnd-->
 <!--NextPageStart-->
-		        <a onclick="nextpage(<!--NextPageNum-->);" class="mdui-btn mdui-btn-raised"><!--constStr@NextPage--></a>
+                <a onclick="nextpage(<!--NextPageNum-->);" class="mdui-btn mdui-btn-raised"><!--constStr@NextPage--></a>
 <!--NextPageEnd-->
-		    </div>
-		    <div class="mdui-col-sm-6 mdui-right mdui-text-right">
-		      <div class="mdui-right mdui-text-right"><span class="mdui-chip-title">Page: <!--MorePageListStart--><!--MorePageListEnd--><!--MorePageListNowStart--><!--PageNum--><!--MorePageListNowEnd-->/<!--MaxPageNum--></span></div>
+            </div>
+            <div class="mdui-col-sm-6 mdui-right mdui-text-right">
+              <div class="mdui-right mdui-text-right"><span class="mdui-chip-title">Page: <!--MorePageListStart--><!--MorePageListEnd--><!--MorePageListNowStart--><!--PageNum--><!--MorePageListNowEnd-->/<!--MaxPageNum--></span></div>
             </div>
           </li>
         </form>
 <!--MorePageEnd-->
 
-	</ul>
+    </ul>
 </div>
 </div>
 <!--ReadmemdStart-->
@@ -406,7 +406,7 @@ $$(function() {
             return false;
         });
     });
-	$('.file .dl').each(function () {
+    $('.file .dl').each(function () {
         $(this).on('click', function () {
             var form = $('<form target=_blank method=post></form>').attr('action', $(this).attr('href')).get(0);
             $(document.body).append(form);
@@ -503,31 +503,31 @@ function downall() {
 }
 <!--ShowThumbnailsStart-->
 function thumb(){
-	if($('#thumb i').text() == "apps"){
-		$('#thumb i').text("format_list_bulleted");
-		$('.nexmoe-item').removeClass('thumb');
-		$('.nexmoe-item .mdui-icon').show();
-		$('.nexmoe-item .mdui-list-item').css("background","");
-	}else{
-		$('#thumb i').text("apps");
-		$('.nexmoe-item').addClass('thumb');
-		$('.mdui-col-xs-12 i.mdui-icon').each(function(){
-			//if($(this).text() == "image" || $(this).text() == "ondemand_video"){
+    if($('#thumb i').text() == "apps"){
+        $('#thumb i').text("format_list_bulleted");
+        $('.nexmoe-item').removeClass('thumb');
+        $('.nexmoe-item .mdui-icon').show();
+        $('.nexmoe-item .mdui-list-item').css("background","");
+    }else{
+        $('#thumb i').text("apps");
+        $('.nexmoe-item').addClass('thumb');
+        $('.mdui-col-xs-12 i.mdui-icon').each(function(){
+            //if($(this).text() == "image" || $(this).text() == "ondemand_video"){
             if($(this).text() == "image"){
-				var thumbnails = $(this).parent().parent().attr('href');
-				//var thumb =(href.indexOf('?') == -1)?'?t=220':'&t=220';
+                var thumbnails = $(this).parent().parent().attr('href');
+                //var thumb =(href.indexOf('?') == -1)?'?t=220':'&t=220';
                 thumbnails = thumbnails.substr(0, thumbnails.length-8)+'?thumbnails&location';
-				$(this).hide();
-				//$(this).parent().parent().parent().css("background","url("+href+thumb+")  no-repeat center top");
+                $(this).hide();
+                //$(this).parent().parent().parent().css("background","url("+href+thumb+")  no-repeat center top");
                 $(this).parent().parent().parent().css("background","url("+thumbnails+")  no-repeat center top");
-			}
-		});
-	}
+            }
+        });
+    }
 
 }
 <!--ShowThumbnailsEnd-->
 $(function(){
-	$('.icon-sort').on('click', function () {
+    $('.icon-sort').on('click', function () {
         let sort_type = $(this).attr("data-sort"), sort_order = $(this).attr("data-order");
         let sort_order_to = (sort_order === "less") ? "more" : "less";
 
@@ -551,26 +551,26 @@ function getCookie(name)
         return null; 
 } 
 function setCookie(key,value,day){
-	var exp = new Date(); 
-	exp.setTime(exp.getTime() - 1); 
-	var cval=getCookie(key); 
-	if(cval!=null) 
-	document.cookie= key + "="+cval+";expires="+exp.toGMTString(); 
-	var date = new Date();
-	var nowDate = date.getDate();
-	date.setDate(nowDate + day);
-	var cookie = key+"="+value+"; expires="+date;
-	document.cookie = cookie;
-	return cookie;
+    var exp = new Date(); 
+    exp.setTime(exp.getTime() - 1); 
+    var cval=getCookie(key); 
+    if(cval!=null) 
+    document.cookie= key + "="+cval+";expires="+exp.toGMTString(); 
+    var date = new Date();
+    var nowDate = date.getDate();
+    date.setDate(nowDate + day);
+    var cookie = key+"="+value+"; expires="+date;
+    document.cookie = cookie;
+    return cookie;
 }
 $('#image_view').on('click', function () {
-	if($(this).prop('checked') == true){
-		setCookie(ckname,1,1);
-		window.location.href=window.location.href;
-	}else{
-		setCookie(ckname,0,1);
-		window.location.href=window.location.href;
-	}
+    if($(this).prop('checked') == true){
+        setCookie(ckname,1,1);
+        window.location.href=window.location.href;
+    }else{
+        setCookie(ckname,0,1);
+        window.location.href=window.location.href;
+    }
 });
 document.querySelectorAll('.markdown').forEach(function (e) {
     e.innerHTML = marked(e.innerHTML);
